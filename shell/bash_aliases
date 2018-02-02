@@ -1,0 +1,19 @@
+# Aliases for bash
+alias ls='ls -G'
+alias ll='ls -al'
+alias md5sum='md5'
+alias week="date +%V"
+alias grep='grep --color=auto'
+alias ping='ping -c 5'
+alias rm='rm -i'
+
+# Aliases for Git
+alias gs='git status'
+alias gba='git branch -a'
+
+# Custom aliases
+alias vimplug="vim ~/.vim/plugins.vim"
+
+# Personal Work Track.
+alias wt='vim + ~/Dropbox/vimwiki/Worktrack.wiki'
+alias sc='python ~/Development/Utilities/worktrack.py --scrum --filter armonia:* pronto:* bmat:*'
