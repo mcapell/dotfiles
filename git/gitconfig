@@ -5,7 +5,7 @@
     interactive = auto
 
 [core]
-    editor = /usr/local/bin/vim
+    editor = /usr/bin/vim
     excludesfile = ~/.gitignore_global
 
 [alias]
@@ -20,3 +20,10 @@
 
 [push]
     default = simple
+
+[credential]
+    helper = cache
+
+# Use .gitconfig.local to store personal information
+[include]
+    path = ~/.gitconfig.local
