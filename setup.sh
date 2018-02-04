@@ -10,3 +10,6 @@ ln -s $HOMEDIR/.dotfiles/git/gitignore_global $HOMEDIR/.gitignore_global
 # shell/
 ln -s $HOMEDIR/.dotfiles/shell/bash_aliases $HOMEDIR/.bash_aliases
 ln -s $HOMEDIR/.dotfiles/shell/profile $HOMEDIR/.profile
+
+# tmux/
+ln -s $HOMEDIR/.dotfiles/tmux/tmux.conf $HOMEDIR/.tmux.conf
