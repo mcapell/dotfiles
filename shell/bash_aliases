@@ -15,5 +15,5 @@ alias gba='git branch -a'
 alias vimplug="vim ~/.vim/plugins.vim"
 
 # Personal Work Track.
-alias wt='vim + ~/Dropbox/vimwiki/Worktrack.wiki'
+alias wt='vim + ~/SpiderOak\ Hive/vimwiki/Worktrack.wiki'
 alias sc='python ~/Development/Utilities/worktrack.py --scrum --filter armonia:* pronto:* bmat:*'
