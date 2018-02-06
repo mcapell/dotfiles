@@ -13,3 +13,6 @@ ln -s $HOMEDIR/.dotfiles/shell/profile $HOMEDIR/.profile
 
 # tmux/
 ln -s $HOMEDIR/.dotfiles/tmux/tmux.conf $HOMEDIR/.tmux.conf
+
+# python/
+ln -s $HOMEDIR/.dotfiles/python/pydocstyle $HOMEDIR/.pydocstyle
