@@ -12,8 +12,11 @@ alias gs='git status'
 alias gba='git branch -a'
 
 # Custom aliases
-alias vimplug="vim ~/.vim/plugins.vim"
+alias vimplug='vim ~/.vim/plugins.vim'
 
 # Personal Work Track.
 alias wt='vim + ~/SpiderOak\ Hive/vimwiki/Worktrack.wiki'
 alias sc='python ~/Development/Utilities/worktrack.py --scrum --filter armonia:* pronto:* bmat:*'
+
+# Mimic pbcopy from OSX
+alias pbcopy='xclip -selection clipboard'
