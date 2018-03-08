@@ -19,3 +19,6 @@ ln -s $HOMEDIR/.dotfiles/python/pydocstyle $HOMEDIR/.pydocstyle
 
 # ubuntu/
 ln -s $HOMEDIR/.dotfiles/ubuntu/xprofile $HOMEDIR/.xprofile
+
+# games/
+ln -s $HOMEDIR/.dotfiles/games/nethackrc $HOMEDIR/.nethackrc
