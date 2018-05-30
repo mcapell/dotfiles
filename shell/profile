@@ -19,9 +19,8 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-# Change language.
-export LANG=en_US.UTF-8
-export LC_TIME=en_US.UTF-8
+# Use standard language and localization.
+export LC_ALL=C.UTF-8
 
 export EDITOR="vim"
 
