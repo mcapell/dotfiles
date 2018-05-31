@@ -1,2 +1,2 @@
-OPTIONS=catname:Boira, dogname:Maia, legacy, autopickup, pickup_types:$?!/=
+OPTIONS=catname:Boira, dogname:Maia, legacy, showexp, autopickup, pickup_types:$?!/=
 OPTIONS=role:valkyrie, race:human, align:lawful
