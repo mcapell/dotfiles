@@ -16,8 +16,7 @@ alias vimplug='vim ~/.vim/plugins.vim'
 
 # Personal Work Track.
 alias wt='vim + ~/SpiderOak\ Hive/vimwiki/Worktrack.wiki'
-alias sc='python ~/Development/Utilities/worktrack.py --scrum --filter armonia:* pronto:* bmat:*'
-alias sc='worktrack ~/SpiderOak\ Hive/vimwiki/Worktrack.wiki scrum --filter bmat --filter pronto --filter armonia'
+alias sc='worktrack ~/SpiderOak\ Hive/vimwiki/Worktrack.wiki scrum --filter bmat --filter pronto --filter armonia --filter ccid'
 
 # Mimic pbcopy from OSX
 alias pbcopy='xclip -selection clipboard'
