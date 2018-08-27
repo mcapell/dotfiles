@@ -136,6 +136,8 @@ assign [class="Slack"] $workspace1
 
 assign [class="Firefox"] $workspace3
 
+assign [class="Thunderbird"] $workspace4
+
 # NOTE regular assign does not work for spotify
 for_window [class="Spotify"] move to workspace $workspace10
 
