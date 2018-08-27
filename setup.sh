@@ -20,6 +20,15 @@ ln -s $HOMEDIR/.dotfiles/python/ctags $HOMEDIR/.ctags
 
 # ubuntu/
 ln -s $HOMEDIR/.dotfiles/ubuntu/xprofile $HOMEDIR/.xprofile
+ln -s $HOMEDIR/.dotfiles/ubuntu/i3config $HOMEDIR/.config/i3/config
 
 # games/
 ln -s $HOMEDIR/.dotfiles/games/nethackrc $HOMEDIR/.nethackrc
+
+# bin/
+
+echo "To install scripts it's required to have perimissions"
+# Ask for password
+sudo -v
+
+sudo cp bin/* /usr/local/bin/

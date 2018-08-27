@@ -1,0 +1,8 @@
+#!/bin/bash
+PLAYERSTATUS=$(playerctl status)
+if [[ "$PLAYERSTATUS" != "Playing" ]]
+then
+    playerctl play
+else
+    playerctl pause
+fi
