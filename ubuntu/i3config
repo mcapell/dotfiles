@@ -211,7 +211,8 @@ bar {
 }
 
 # Lock screen
-bindsym $mod+Shift+x exec /home/marc/.dotfiles/lock.sh
+bindsym $mod+Shift+x exec ~/.dotfiles/lock.sh
+bindsym $mod+Shift+Escape exec systemctl suspend -i
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -229,7 +230,6 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart
-# Nautilus: sudo gsettings set org.gnome.desktop.background show-desktop-icons false
 exec_always feh --bg-scale /home/marc/Pictures/never.jpg
 exec SpiderOakONE
 exec keepassxc
