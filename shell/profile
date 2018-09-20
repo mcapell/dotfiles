@@ -24,11 +24,6 @@ export LC_ALL=C.UTF-8
 
 export EDITOR="vim"
 
-# Add bash aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # Rustup: You can uninstall at any time with rustup self uninstall
 export PATH="$HOME/.cargo/bin:$PATH"
 

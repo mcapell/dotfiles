@@ -210,7 +210,10 @@ bar {
         }
 }
 
-# Lock screen
+# Take an screenshot
+bindsym --release $mod+Shift+s exec --no-startup-id maim ~/Downloads/Screenshot.png -s
+
+# Lock screen and suspend
 bindsym $mod+Shift+x exec ~/.dotfiles/lock.sh
 bindsym $mod+Shift+Escape exec systemctl suspend -i
 
@@ -231,8 +234,8 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Autostart
 exec_always feh --bg-scale /home/marc/Pictures/never.jpg
+exec touchegg
 exec SpiderOakONE
 exec keepassxc
 exec /usr/lib/protonmail/bridge/Desktop-Bridge.sh
 exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
