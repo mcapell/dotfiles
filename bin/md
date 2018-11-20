@@ -2,5 +2,5 @@
 
 bash ~/.screenlayout/desktop.sh
 
-setxkbmap -layout us -variant mac
+setxkbmap -layout us -variant altgr-intl
 xmodmap ~/.Xmodmap
