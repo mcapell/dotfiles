@@ -28,8 +28,11 @@ ln -s $HOMEDIR/.dotfiles/games/nethackrc $HOMEDIR/.nethackrc
 
 # bin/
 
-echo "To install scripts it's required to have perimissions"
+echo "To install scripts it's required to have permissions"
 # Ask for password
 sudo -v
+
+ln -s $HOMEDIR/.dotfiles/ubuntu/80synclient /etc/X11/Xsession.d/80syclient
+chmod 644 /etc/X11/Xsession.d/80synclient
 
 sudo cp bin/* /usr/local/bin/

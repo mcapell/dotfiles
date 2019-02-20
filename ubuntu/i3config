@@ -217,8 +217,8 @@ bindsym $mod+Shift+x exec ~/.dotfiles/lock.sh
 bindsym $mod+Shift+Escape exec systemctl suspend -i
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -2% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
@@ -236,5 +236,5 @@ exec_always feh --bg-scale /home/marc/Pictures/never.jpg
 exec touchegg
 exec SpiderOakONE
 exec keepassxc
-exec /usr/lib/protonmail/bridge/Desktop-Bridge.sh
+exec protonmail-bridge --no-window
 exec --no-startup-id nm-applet
