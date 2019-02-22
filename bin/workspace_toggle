@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+import re
+import subprocess
+import time
+
+
+FILENAME = '/tmp/workspace_toggle'
+BIN = 'xrandr'
+
+
+def external_is_connected(output):
+    return re.search(r'[^e]DP1 connected', output) is not None
+
+
+def connect_external():
+    subprocess.call(['/usr/local/bin/md', ])
+    store_workspace('external')
+
+
+def connect_laptop():
+    subprocess.call(['/usr/local/bin/ml', ])
+    store_workspace('laptop')
+
+
+def get_workspace():
+    try:
+        with open(FILENAME) as fd:
+            return fd.read().strip()
+    except FileNotFoundError:
+        return '_setup'
+
+
+def store_workspace(workspace):
+    with open(FILENAME, 'w') as fd:
+        fd.write(workspace)
+
+
+def execute_loop()
+    try:
+        output = subprocess.check_output([BIN, ], shell=True)
+    except subprocess.CompletedProcess:
+        return
+    output = output.decode('utf-8')
+    workspace = get_workspace()
+    if workspace == 'laptop' and external_is_connected(output):
+        connect_external()
+    elif workspace == 'external' and not external_is_connected(output):
+        connect_laptop()
+    elif workspace == '_setup':
+        store_workspace(
+            'external' if external_is_connected(output) else 'laptop')
+
+    time.sleep(5)
+
+
+def run():
+    while True:
+        try:
+            execute_loop()
+        except Exception:
+            pass
+        time.sleep(5)
+
+
+run()

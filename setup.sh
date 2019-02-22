@@ -22,6 +22,7 @@ ln -s $HOMEDIR/.dotfiles/python/ctags $HOMEDIR/.ctags
 # ubuntu/
 ln -s $HOMEDIR/.dotfiles/ubuntu/xprofile $HOMEDIR/.xprofile
 ln -s $HOMEDIR/.dotfiles/ubuntu/i3config $HOMEDIR/.config/i3/config
+ln -s $HOMEDIR/.dotfiles/ubuntu/Xresources $HOMEDIR/.Xresources
 
 # games/
 ln -s $HOMEDIR/.dotfiles/games/nethackrc $HOMEDIR/.nethackrc
@@ -32,7 +33,7 @@ echo "To install scripts it's required to have permissions"
 # Ask for password
 sudo -v
 
-ln -s $HOMEDIR/.dotfiles/ubuntu/80synclient /etc/X11/Xsession.d/80syclient
-chmod 644 /etc/X11/Xsession.d/80synclient
+sudo ln -s $HOMEDIR/.dotfiles/ubuntu/80synclient /etc/X11/Xsession.d/80synclient
+sudo chmod 644 /etc/X11/Xsession.d/80synclient
 
 sudo cp bin/* /usr/local/bin/
